@@ -15,9 +15,7 @@ public class Esercizio1 {
         for (int i = 0; i < numeroSet; i++) {
             System.out.println("Scrivimi le parole che vuoi inserire");
             String text = scanner.nextLine();
-            if (textSet.add(text)) {
-                textSet.add(text);
-            } else {
+            if (!textSet.add(text)) {
                 textduplicatiSet.add(text);
             }
 
